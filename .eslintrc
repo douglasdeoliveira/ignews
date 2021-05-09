@@ -33,6 +33,7 @@
 		"react/jsx-props-no-spreading": "off",
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"import-helpers/order-imports": [
 			"warn",
 			{
@@ -45,5 +46,10 @@
 				"alphabetize": { "order": "asc", "ignoreCase": true }
 			}
 		]
+	},
+	"settings": {
+		"import/resolver": {
+			"typescript": {}
+		}
 	}
 }

@@ -1,5 +1,13 @@
-import styles from '../styles/home.module.scss';
+import Head from 'next/head';
 
-export default function Home(): JSX.Element {
-	return <h1 className={styles.title}>Hello world</h1>;
+export default function Home() {
+	return (
+		<>
+			<Head>
+				<title>Ig.News</title>
+			</Head>
+
+			<h1>Hello world</h1>
+		</>
+	);
 }
