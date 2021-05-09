@@ -5,7 +5,8 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start"
+		"start": "next start",
+		"prepare": "husky install"
 	},
 	"dependencies": {
 		"next": "10.2.0",
@@ -39,7 +40,7 @@
 	},
 	"lint-staged": {
 		"*.{json,js,jsx,ts,tsx,css,scss,md}": "prettier --config .prettierrc --write",
-		"*.{ts,tsx,js,jsx,json}": "eslint --quiet --fix --cache --max-warnings 0",
+		"*.{ts,tsx,js,jsx}": "eslint --quiet --fix --cache --max-warnings 0",
 		"*.{scss}": "stylelint --quiet --fix"
 	}
 }
