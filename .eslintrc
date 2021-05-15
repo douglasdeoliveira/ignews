@@ -26,6 +26,13 @@
 	],
 	"rules": {
 		"prettier/prettier": "error",
+		"camelcase": "off",
+		"no-restricted-syntax": [
+			"error",
+			"ForInStatement",
+			"LabeledStatement",
+			"WithStatement"
+		],
 		"space-before-function-paren": "off",
 		"react/prop-types": "off",
 		"react/react-in-jsx-scope": "off",
@@ -40,6 +47,15 @@
 				"components": ["Link"],
 				"specialLink": ["hrefLeft", "hrefRight"],
 				"aspects": ["invalidHref", "preferButton"]
+			}
+		],
+		"import/prefer-default-export": "off",
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"ts": "never",
+				"tsx": "never"
 			}
 		],
 		"import-helpers/order-imports": [
