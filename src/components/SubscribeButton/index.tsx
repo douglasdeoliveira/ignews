@@ -1,5 +1,5 @@
 import { signIn, useSession } from 'next-auth/client';
-import { useRouter } from 'next/dist/client/router';
+import { useRouter } from 'next/router';
 
 import api from '@services/api';
 import getStripeJs from '@services/stripe-js';
@@ -18,6 +18,7 @@ export default function SubscribeButton() {
 
 		if (session?.activeSubscription) {
 			push('/posts');
+			return;
 		}
 
 		try {
